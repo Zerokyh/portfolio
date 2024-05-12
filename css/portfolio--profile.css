@@ -1,0 +1,74 @@
+.portfolio--profile {
+  max-width: var(--maxWidth--desktop);
+  width: 100%;
+  padding: 120px 0;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 100px;
+
+  border-bottom: 2px solid var(--gray200);
+}
+
+.profile--introduce {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile--introduce--subject {
+  color: var(--blue300);
+  font-size: var(--font--size--big);
+}
+
+.profile--introduce--text {
+  border-left: 2px solid var(--gray200);
+  padding-left: 20px;
+}
+
+.profile--card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile--card > .profile--card--box {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 0rem 0.25rem 3rem;
+  padding: 24px;
+  gap: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+.profile--card--box > i {
+  font-size: var(--font--size--big);
+  color: var(--blue300);
+}
+
+.profile--card--box--subject {
+  color: var(--blue300);
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio--profile {
+    max-width: var(--maxWidth--mobile);
+  }
+  .profile--introduce {
+    gap: 20px;
+  }
+  .profile--card {
+    flex-direction: column;
+    max-width: var(--maxWidth--mobile);
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  max-width: var(--maxWidth--desktop);
+  margin: 0 auto;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--white);
+}
+
+nav > .logo {
+  font-size: var(--font--size--large);
+  font-weight: 600;
+  color: var(--blue300);
+}
+
+.menu--bar > ul {
+  display: flex;
+  font-size: var(--font--size--small);
+  color: var(--gray500);
+
+  gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    max-width: var(--maxWidth--modile);
+    justify-content: space-evenly;
+  }
+
+  nav > .logo {
+    font-size: var(--font--size--medium);
+  }
+
+  .menu--bar > ul {
+    font-size: var(--font--size--small);
+  }
+}

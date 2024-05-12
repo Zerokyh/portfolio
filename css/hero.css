@@ -1,0 +1,32 @@
+.hero {
+  width: 100vw;
+  height: calc(100vh - 72px);
+  position: relative;
+}
+
+.hero > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: -1;
+}
+
+.hero > .hero--jumbotron {
+  width: 100%;
+  position: absolute;
+  font-size: var(--font--size--big);
+  font-weight: 600;
+  color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  padding-top: 240px;
+
+  gap: 18px;
+}
+
+.hero--jumbotron > i {
+  color: var(--blue300);
+}
