@@ -36,10 +36,10 @@ nav > .logo {
   }
 
   nav > .logo {
-    font-size: var(--font--size--medium);
+    font-size: var(--font--size--small);
   }
 
   .menu--bar > ul {
-    font-size: var(--font--size--small);
+    font-size: var(--font--size--tiny);
   }
 }
