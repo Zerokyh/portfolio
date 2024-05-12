@@ -10,6 +10,7 @@
   --pink500: #ff5160;
   --pink600: #db3b57;
   --blue300: #74b9ff;
+  --blue800: #033e79;
 
   /* font */
   --font--size--mega: 64px;
@@ -29,7 +30,7 @@
   /* max-width */
   --maxWidth--desktop: 1024px;
   /* --maxWidth--tablet: 628px; */
-  --maxWidth--mobile: 400px;
+  --maxWidth--mobile: 412px;
 }
 
 @font-face {

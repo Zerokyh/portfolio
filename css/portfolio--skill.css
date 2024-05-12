@@ -1,12 +1,16 @@
 .portfolio--skill {
   width: 100vw;
+
+  max-width: var(--maxWidth--desktop);
+  margin: 100px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .portfolio--skill--subject {
   width: 100%;
-  max-width: var(--maxWidth--desktop);
-  margin: 0 auto;
-  padding: 100px 0px;
 
   color: var(--blue300);
   font-size: var(--font--size--big);
@@ -14,14 +18,14 @@
 
 .portfolio--skill--grid {
   width: 100%;
-  margin: 0 auto;
-  height: 856px;
+
+  height: 700px;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .portfolio--skill--grid--box {
@@ -74,15 +78,27 @@
 }
 
 @media screen and (max-width: 768px) {
-  .portfolio--skill--grid {
+  .portfolio--skill {
     max-width: var(--maxWidth--mobile);
+    width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+  .portfolio--skill--subject {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio--skill--grid {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
     gap: 40px;
 
-    margin: 0px auto 100px;
+    margin: 0 0 100px;
     height: 1600px;
   }
 
@@ -93,11 +109,5 @@
     background-color: var(--white);
     border-radius: 0.75rem;
     box-shadow: rgba(0, 0, 0, 0.08) 0rem 0.25rem 3rem;
-    padding: 24px;
-  }
-
-  .portfolio--skill--subject {
-    display: flex;
-    justify-content: center;
   }
 }

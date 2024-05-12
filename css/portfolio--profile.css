@@ -19,6 +19,8 @@
 }
 
 .profile--introduce--subject {
+  display: flex;
+  align-items: center;
   color: var(--blue300);
   font-size: var(--font--size--big);
 }
@@ -30,7 +32,7 @@
 
 .profile--card {
   display: flex;
-  justify-content: center;
+
   align-items: center;
   gap: 20px;
 }
@@ -61,14 +63,34 @@
 @media screen and (max-width: 768px) {
   .portfolio--profile {
     max-width: var(--maxWidth--mobile);
+    width: calc(100% - 40px);
+    height: 100%;
+    align-items: center;
+
+    padding: 120px 20px;
   }
   .profile--introduce {
-    gap: 20px;
-  }
-  .profile--card {
-    flex-direction: column;
-    max-width: var(--maxWidth--mobile);
     width: 100%;
-    margin: 0 auto;
+    height: 100%;
+    gap: 10px;
+  }
+
+  .profile--introduce--subject {
+    font-size: var(--font--size--medium);
+  }
+
+  .profile--introduce--text {
+    padding-left: 10px;
+    font-size: var(--font--size--small);
+  }
+
+  .profile--card {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .profile--card > .profile--card--box {
+    padding: 20px 0;
+    margin: 0 20px;
   }
 }
